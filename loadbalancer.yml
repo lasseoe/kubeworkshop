@@ -6,7 +6,6 @@ metadata:
   name: kube-lasse
   namespace: default
 spec:
-  clusterIP: 10.51.244.59
   externalTrafficPolicy: Cluster
   ports:
   - nodePort: 31855
