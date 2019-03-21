@@ -16,8 +16,8 @@ func main() {
 
 
 	http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "-=- Kubernetes -=- 21 march 2019")
-		fmt.Fprintf(w, "%s\n", time.Now())
+		fmt.Fprintf(w, "-=- Kubernetes workshop @ Google DK -=-\n")
+		fmt.Fprintf(w, " -- time: %s\n", time.Now())
 		fmt.Fprintf(w, " -- hostname: %s", name)
 	})
 
