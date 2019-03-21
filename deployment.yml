@@ -38,16 +38,3 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
-status:
-  availableReplicas: 3
-  conditions:
-  - lastTransitionTime: 2019-03-21T10:19:16Z
-    lastUpdateTime: 2019-03-21T10:19:16Z
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
-  observedGeneration: 2
-  readyReplicas: 3
-  replicas: 3
-  updatedReplicas: 3
