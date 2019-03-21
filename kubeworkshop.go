@@ -24,5 +24,8 @@ func main() {
 	//fs := http.FileServer(http.Dir("static/"))
 	//http.Handle("/static/", http.StripPrefix("/static/", fs))
 
+
+	fmt.Printf("Starting on %s\n", name)
+	fmt.Println("Listening on port 9000 :-)\n")
 	http.ListenAndServe(":9000", nil)
 }
