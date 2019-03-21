@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: kube-lasse
+  name: kube-lasse
+  namespace: default
+spec:
+  clusterIP: 10.51.244.59
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31855
+    port: 9000
+    protocol: TCP
+    targetPort: 9000
+  selector:
+    run: kube-lasse
+  sessionAffinity: None
+  type: LoadBalancer
